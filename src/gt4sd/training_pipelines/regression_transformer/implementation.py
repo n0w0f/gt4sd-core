@@ -43,12 +43,8 @@ from transformers import (
     set_seed,
 )
 
-from ..core import TrainingPipeline, TrainingPipelineArguments
-from .utils import (
-    get_hf_training_arg_object,
-    get_train_config_dict,
-    prepare_datasets_from_files,
-)
+from gt4sd.training_pipelines.core import TrainingPipeline, TrainingPipelineArguments
+from gt4sd.regression_transformer.utils import get_hf_training_arg_object, get_train_config_dict, prepare_datasets_from_files
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())

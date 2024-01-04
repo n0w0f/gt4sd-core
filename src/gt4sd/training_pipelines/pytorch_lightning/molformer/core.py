@@ -32,30 +32,30 @@ import sentencepiece as _sentencepiece
 import torch as _torch
 import tensorflow as _tensorflow
 import importlib_resources
-from gt4sd_molformer.finetune.finetune_pubchem_light import (
-    LightningModule as RegressionLightningModule,
-)
-from gt4sd_molformer.finetune.finetune_pubchem_light import (
-    PropertyPredictionDataModule as RegressionDataModule,
-)
-from gt4sd_molformer.finetune.finetune_pubchem_light_classification import (
-    LightningModule as ClassificationLightningModule,
-)
-from gt4sd_molformer.finetune.finetune_pubchem_light_classification import (
-    PropertyPredictionDataModule as ClassificationDataModule,
-)
-from gt4sd_molformer.finetune.finetune_pubchem_light_classification_multitask import (
-    MultitaskModel,
-    PropertyPredictionDataModule,
-)
-from gt4sd_molformer.finetune.ft_tokenizer.ft_tokenizer import MolTranBertTokenizer
-from gt4sd_molformer.training.train_pubchem_light import (
-    LightningModule as PretrainingModule,
-)
-from gt4sd_molformer.training.train_pubchem_light import MoleculeModule
-from gt4sd_trainer.hf_pl.pytorch_lightning_trainer import (
-    PyTorchLightningTrainingPipeline,
-)
+# from gt4sd_molformer.finetune.finetune_pubchem_light import (
+#     LightningModule as RegressionLightningModule,
+# )
+# from gt4sd_molformer.finetune.finetune_pubchem_light import (
+#     PropertyPredictionDataModule as RegressionDataModule,
+# )
+# from gt4sd_molformer.finetune.finetune_pubchem_light_classification import (
+#     LightningModule as ClassificationLightningModule,
+# )
+# from gt4sd_molformer.finetune.finetune_pubchem_light_classification import (
+#     PropertyPredictionDataModule as ClassificationDataModule,
+# )
+# from gt4sd_molformer.finetune.finetune_pubchem_light_classification_multitask import (
+#     MultitaskModel,
+#     PropertyPredictionDataModule,
+# )
+# from gt4sd_molformer.finetune.ft_tokenizer.ft_tokenizer import MolTranBertTokenizer
+# from gt4sd_molformer.training.train_pubchem_light import (
+#     LightningModule as PretrainingModule,
+# )
+# from gt4sd_molformer.training.train_pubchem_light import MoleculeModule
+# from gt4sd_trainer.hf_pl.pytorch_lightning_trainer import (
+#     PyTorchLightningTrainingPipeline,
+# )
 from pytorch_lightning import LightningDataModule, LightningModule
 from pytorch_lightning.utilities import seed
 

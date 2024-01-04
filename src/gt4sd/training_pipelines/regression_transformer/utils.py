@@ -39,7 +39,7 @@ from transformers.training_args import TrainingArguments
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 
-TRANSFORM_FACTORY = {"SELFIES": encoder}
+TRANSFORM_FACTORY = {"SELFIES": encoder, "SLICES": lambda x: x}
 AUGMENT_FACTORY = {
     "SMILES": Augment(),
     "SELFIES": Augment(),
@@ -188,9 +188,12 @@ def prepare_datasets_from_files(
                     f"<{p}>{row[p]:.3f}{tokenizer.expression_separator}"
                     for p in properties
                 ]
-                + [trans(row.text)]  # type: ignore
+            #    + [trans(row.text)]  # type: ignore
+                + [trans(row.text)]
+
             )
             data.append(line)
+            print(data)
 
         # Perform augmentation on training data if applicable
         if i == 0 and augment is not None and augment > 1:

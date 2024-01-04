@@ -1,0 +1,19 @@
+{
+	"property_token": [
+		"<prop0>"
+	],
+	"example": "<prop0>225.991|[C][O][=S][Branch1_2][C][=O][Branch1_1][C][O-expl][C][=C][C][=C][C][Branch1_1][Branch2_2][C][Branch1_1][C][F][Branch1_1][C][F][F][=C][Ring1][Branch2_3].[H-expl]",
+	"property_ranges": {
+		"<prop0>": [
+			0,
+			225.991
+		]
+	},
+	"normalize": [
+		false
+	],
+	"max_span_length": 5,
+	"property_mask_length": {
+		"<prop0>": 7
+	}
+}

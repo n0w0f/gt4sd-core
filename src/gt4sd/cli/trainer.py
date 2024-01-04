@@ -31,13 +31,10 @@ import sys
 from dataclasses import dataclass, field
 from typing import IO, Iterable, Optional, Tuple, cast
 
-from ..configuration import GT4SDConfiguration
-from ..training_pipelines import (
-    TRAINING_PIPELINE_ARGUMENTS_MAPPING,
-    TRAINING_PIPELINE_MAPPING,
-)
-from ..training_pipelines.core import TrainingPipelineArguments
-from .argument_parser import ArgumentParser, DataClass, DataClassType
+from gt4sd.configuration import GT4SDConfiguration
+from gt4sd.training_pipelines import TRAINING_PIPELINE_ARGUMENTS_MAPPING, TRAINING_PIPELINE_MAPPING
+from gt4sd.configuration import GT4SDConfiguration
+from gt4sd.training_pipelines import TRAINING_PIPELINE_ARGUMENTS_MAPPING, TRAINING_PIPELINE_MAPPING
 
 logger = logging.getLogger(__name__)
 
